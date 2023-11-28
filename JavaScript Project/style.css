@@ -9,10 +9,10 @@
 body {
     background-color: #184b2f;
     background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .navbar {
-    font-family: Barlow ;
     width: auto;
     height: auto;
     padding-top: -15px;
@@ -28,35 +28,35 @@ body {
     list-style: none;
     display: inline-block;
     margin: 0 110px;
-    position: relative;
+    position: relative; /* de navbar zelf*/
 }
 .navbar ul li a{
+    font-family: Barlow;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 15px; /* de text van de navbar*/
 }
 .banner {
     width: 20%;
     scale: 69%;
     margin-left: 0px;
     height: 120px;
-    margin-top: -19px;
+    margin-top: -19px; /*de TCR Logo bovenaan de website*/
 }
 
 .footer {
     background-color: #006445;
     height: 100px;
-    margin-top: 600px;
-    margin-bottom: 0;
+    margin-top: 590px;
     scale: 80%;
     width: 50%;
-    margin-left: 400px;
+    margin-left: 400px; /* de onderstuk van het pagina waar de social media links in staan */
 }
 .footlogo {
     scale: 68%;
     height: 0%;
-    margin-left: -150px;
+    margin-left: -150px; /* de TCR Logo in de footer*/
 
 }
 .button {
