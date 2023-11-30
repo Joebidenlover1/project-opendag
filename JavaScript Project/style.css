@@ -10,7 +10,14 @@ body {
     background-color: #184b2f;
     background-size: auto;
     background-repeat: no-repeat;
-}
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    }
+body::-webkit-scrollbar {
+        display: none;
+    }
+
 
 .navbar {
     width: auto;
@@ -27,7 +34,7 @@ body {
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 110px;
+    margin: 0 100px;
     position: relative; /* de navbar zelf*/
 }
 .navbar ul li a {
@@ -63,7 +70,7 @@ body {
 .footer {
     background-color: #006445;
     height: 100px;
-    margin-top: 590px;
+    margin-top: 600px;
     scale: 80%;
     width: 50%;
     margin-left: 400px; /* de onderstuk van het pagina waar de social media links in staan */
@@ -85,8 +92,8 @@ body {
     font-size: 12px; /*Button voor aanmelden kan*/
 }
 #slide {
-    position: absolute;
-    bottom: -100px; /* SET THE SLIDER TO BE OFFSCREEN INITIALLY */
+    position: relative;
+    bottom: -150px; /* SET THE SLIDER TO BE OFFSCREEN INITIALLY */
     width: 100px;
     height: 100px;
     transition: 1s;
