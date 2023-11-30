@@ -30,12 +30,27 @@ body {
     margin: 0 110px;
     position: relative; /* de navbar zelf*/
 }
-.navbar ul li a{
+.navbar ul li a {
     font-family: Barlow;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 15px; /* de text van de navbar*/
+    font-size: 20px;
+    font-weight: bold;
+    /* de text van de navbar*/
+}
+        .navbar ul li::after{
+        content: '';
+        height: 3px;
+        width: 0;
+        background: #184b2f;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.7s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
 }
 .banner {
     width: 20%;
@@ -60,7 +75,7 @@ body {
 
 }
 .button {
-background-color: #dbff4a ;
+    background-color: #dbff4a ;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -68,6 +83,18 @@ background-color: #dbff4a ;
     text-decoration: none;
     display: inline-block;
     font-size: 12px; /*Button voor aanmelden kan*/
+}
+#slide {
+    position: absolute;
+    bottom: -100px; /* SET THE SLIDER TO BE OFFSCREEN INITIALLY */
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+
+.footer:hover #slide {
+    transition: 1s;
+    bottom: 0; /* SET THE SLIDER TO BE 0 */
 }
 
 .column-right {
