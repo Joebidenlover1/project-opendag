@@ -15,57 +15,57 @@ function talk(){
     }
 }
 
-const questions = [
+var questions = [
     {
         question: "Wat doe je met de opleiding Software Developer?",
         answers: [
-            { text: "Leren coderen", correct = true},
-            { text: "Leren over computers", correct = false},
-            { text: "Leren over robotica", correct = false},
-            { text: "Leren hoe je moet hacken", correct = false},
+            { text: "Leren coderen", correct: true},
+            { text: "Leren over computers", correct: false},
+            { text: "Leren over robotica", correct: false},
+            { text: "Leren hoe je moet hacken", correct: false},
         ]
-    }
+    },
     {
         question: "Welke vak ga je niet krijgen op het Software Developer opleiding?",
         answers: [
-            { text: "Nederlands", correct = false},
-            { text: "Wiskunde", correct = true},
-            { text: "Rekenen", correct = false},
-            { text: "Engels", correct = false},
+            { text: "Nederlands", correct: false},
+            { text: "Wiskunde", correct: true},
+            { text: "Rekenen", correct: false},
+            { text: "Engels", correct: false},
         ]
-    }
+    },
     {
         question: "Wat heb je NIET nodig om de opleiding Software Developer te volgen?",
         answers: [
-            { text: "Wetenschap van programmeren", correct = true},
-            { text: "Een laptop", correct = false},
-            { text: "Geld", correct = false},
-            { text: "Vervoer naar school", correct = false},
+            { text: "Wetenschap van programmeren", correct: true},
+            { text: "Een laptop", correct: false},
+            { text: "Geld", correct: false},
+            { text: "Vervoer naar school", correct: false},
         ]
-    }
+    },
     {
         question: "Met welke programmeertalen gaan we NIET werken?",
         answers: [
-            { text: "PHP", correct = false},
-            { text: "Javascript", correct = false},
-            { text: "C# (C Sharp)", correct = false},
-            { text: "Lua", correct = true},
+            { text: "PHP", correct: false},
+            { text: "Javascript", correct: false},
+            { text: "C# (C Sharp)", correct: false},
+            { text: "Lua", correct: true},
         ]
-    }
+    },
     {
         question: "Hoeveel herkansingen ga je krijgen per periode?",
         answers: [
-            { text: "1", correct = true},
-            { text: "2", correct = false},
-            { text: "3", correct = false},
-            { text: "0", correct = false},
+            { text: "1", correct: true},
+            { text: "2", correct: false},
+            { text: "3", correct: false},
+            { text: "0", correct: false},
         ]
     }
 ];
 
-const  questionElement = document.getElementById("question");
-const  answerButton = document.getElementById("answer-buttons");
-const  nextButton = document.getElementById("next-btn");
+var  questionElement = document.getElementById("question");
+var  answerButton = document.getElementById("answer-buttons");
+var  nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
