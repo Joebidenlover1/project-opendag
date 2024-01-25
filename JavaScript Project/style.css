@@ -9,6 +9,7 @@
 body {
     background-color: #184b2f;
     background-repeat: no-repeat;
+    max-height: 960px;
 
 }
 body::-webkit-scrollbar {
@@ -71,7 +72,7 @@ body::-webkit-scrollbar {
     margin-left: -150px; /* de TCR Logo in de footer*/
 
 }
-button {
+#contact {
     background-color: #dbff4a ;
     border: none;
     color: black;
@@ -81,6 +82,10 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 12px; /*Button voor aanmelden kan*/
+}
+
+#contact:hover {
+    cursor: pointer;
 }
 
 
@@ -231,4 +236,70 @@ a {
 .youtube {
     scale: 130%;
 
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    border: 3px solid black;
+
+}
+
+.app h1 {
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
+
+.button {
+    background: white;
+    color: darkslategray;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: left;
+    margin: 10px 0;
+    border: 1px solid #222;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: black;
+    color: white;
+}
+
+#next-btn {
+    background-color: #006445;
+    color: white;
+    font-weight: 500;
+    font-size: 120%;
+    width: 600px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    border-radius: 4px;
+    display: none;
+}
+
+
+#question {
+    color: black;
 }
