@@ -8,6 +8,8 @@
 
 body {
     background-color: #184b2f;
+    background-repeat: no-repeat;
+
 }
 body::-webkit-scrollbar {
     display: none;
@@ -135,8 +137,6 @@ iframe {
     width: 500px;
     height: 290px;
     justify-content: space-evenly;
-<<<<<<< HEAD
-=======
 }
 
 a {
@@ -144,8 +144,8 @@ a {
 }
 
 .glass {
-    width: 1450px;        /* 700 px */
-    height: 525px;
+    width: 1435px;        /* 700 px */
+    height: 540px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 50px;
     color: #000;
@@ -199,5 +199,37 @@ a {
     font-size: 1.6rem;
     margin-top: 30px;
     color: white;
->>>>>>> 898a737c23f1d98ba06be885032e4b1584c45010
+}
+
+.footer {
+    margin-top: 422px;
+    margin-left: 580px;
+    max-width: 350px;
+    background-color: #006445;
+    scale: 75%;
+    height: 50px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+
+}
+
+.footer ul a {
+   max-width: 20px;
+    max-height: 20px;
+    scale: 20%;
+    margin-left:15px ;
+}
+
+.footer ul a img {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    margin-bottom: px;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.youtube {
+scale: 130%;
+
 }

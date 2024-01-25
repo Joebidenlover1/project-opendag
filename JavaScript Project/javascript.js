@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 function talk(){
     var know = {
         "Hoe gaat het?" : "Goed :))",
@@ -13,7 +11,6 @@ function talk(){
     if (user in know) {
         document.getElementById('chatLog').innerHTML = know[user] + "<br>";
     }else{
-        document.getElementById('chatLog').innerHTML = "Sorry, ik begrijp je vraag niet :( <br>";
+        document.getElementById('chatLog').innerHTML = "Sorry, ik begrijp je vraag niet 😦 <br>";
     }
 }
->>>>>>> 898a737c23f1d98ba06be885032e4b1584c45010
