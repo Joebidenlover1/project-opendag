@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
 
@@ -11,7 +12,7 @@
 </div>
 <div class="navbar">
     <div class="banner">
-        <img src="tcrlogo.jpeg.png">
+        <img src="tcrlogo.jpeg.png" alt="TCR">
     </div>
     <ul>
         <li> <a href="index.html">Home</a> </li>
@@ -20,10 +21,14 @@
         <li> <a href="aanmelden.html">Aanmelden</a> </li>
     </ul>
 </div>
-<div class="column-right" >
-    <h1>bLA BLA TCR INFO</h1>
+<div class="glass">
+    <h1>Chatbot</h1>  <! –– Chat bot logo ––>
+    <h2>Stel een vraag (^_^). </h2>
+    <div class="input"><label for="userBox"></label><input type="text" id="userBox" onkeydown="if(event.keyCode === 13){ talk()}" placeholder="Type jouw vraag....." />
+    </div> <p id="chatLog">Antwoord verschijnt hier :D</p> </div>
 
-</div>
+<div class="column-right" >
+
 </div>
 </body>
 </html>

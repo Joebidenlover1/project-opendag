@@ -8,11 +8,6 @@
 
 body {
     background-color: #184b2f;
-    background-size: auto;
-    background-repeat: no-repeat;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    overflow-y: scroll;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -38,7 +33,7 @@ body::-webkit-scrollbar {
     position: relative; /* de navbar zelf*/
 }
 .navbar ul li a {
-    font-family: Barlow;
+    font-family: Barlow, serif;
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -62,22 +57,15 @@ body::-webkit-scrollbar {
 .banner {
     width: 20%;
     scale: 69%;
-    margin-left: 0px;
+    margin-left: 0;
     height: 120px;
     margin-top: -19px; /*de TCR Logo bovenaan de website*/
 }
 
-.footer {
-    background-color: #006445;
-    height: 100px;
-    margin-top: 600px;
-    scale: 80%;
-    width: 50%;
-    margin-left: 400px; /* de onderstuk van het pagina waar de social media links in staan */
-}
+
 .footlogo {
     scale: 68%;
-    height: 0%;
+    height: 0;
     margin-left: -150px; /* de TCR Logo in de footer*/
 
 }
@@ -86,24 +74,13 @@ button {
     border: none;
     color: black;
     padding: 10px 30px;
-    margin: 20px 0%;
+    margin: 20px 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 12px; /*Button voor aanmelden kan*/
 }
-#slide {
-    position: relative;
-    bottom: -150px; /* SET THE SLIDER TO BE OFFSCREEN INITIALLY */
-    width: 100px;
-    height: 100px;
-    transition: 1s;
-}
 
-.footer:hover #slide {
-    transition: 1s;
-    bottom: 0; /* SET THE SLIDER TO BE 0 */
-}
 
 .column-right {
     display: flex;
@@ -116,11 +93,19 @@ button {
     text-align: left;
     justify-content: space-between;
     margin: 20px 100px;
+    color: #ffffff;
+}
+
+h1 {
+    color: #ffffff;
+}
+h2 {
+    color: #ffffff;
 }
 
 .column-right p {
     font-size: 20px;
-    margin: 7px 0%;
+    margin: 7px 0;
 
 }
 
@@ -142,7 +127,7 @@ button {
 .column-main {
     display: flex;
     justify-content: right;
-    padding: 0rem 2rem;
+    padding: 0 2rem;
 
 }
 
@@ -150,4 +135,69 @@ iframe {
     width: 500px;
     height: 290px;
     justify-content: space-evenly;
+<<<<<<< HEAD
+=======
+}
+
+a {
+    color: Red;
+}
+
+.glass {
+    width: 1450px;        /* 700 px */
+    height: 525px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: #000;
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+}
+
+.glass-1 {
+    width: 500px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    color: rgb(122, 82, 82);
+    border-radius: 9px;
+    backdrop-filter: blur(50px);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
+    line-height: 1.5;
+
+}
+.glass h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.glass h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.input {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.input input {
+    width: 100%;
+    height: 70px;
+    border: none;
+    padding-left: 30px;
+    padding-top: 0;
+    outline: none;
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
+.glass p {
+    font-size: 1.6rem;
+    margin-top: 30px;
+    color: white;
+>>>>>>> 898a737c23f1d98ba06be885032e4b1584c45010
 }
