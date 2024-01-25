@@ -13,18 +13,10 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-y: scroll;
-<<<<<<< HEAD
-    }
-body::-webkit-scrollbar {
-        display: none;
-    }
-
-=======
 }
 body::-webkit-scrollbar {
     display: none;
 }
->>>>>>> b69403ef91b292fb1aa8bf4eaa939a4068930d38
 
 
 .navbar {
@@ -54,20 +46,6 @@ body::-webkit-scrollbar {
     font-weight: bold;
     /* de text van de navbar*/
 }
-<<<<<<< HEAD
-        .navbar ul li::after{
-        content: '';
-        height: 3px;
-        width: 0;
-        background: #184b2f;
-        position: absolute;
-        left: 0;
-        bottom: -10px;
-        transition: 0.7s;
-    }
-    .navbar ul li:hover::after{
-        width: 100%;
-=======
 .navbar ul li::after{
     content: '';
     height: 3px;
@@ -80,7 +58,6 @@ body::-webkit-scrollbar {
 }
 .navbar ul li:hover::after{
     width: 100%;
->>>>>>> b69403ef91b292fb1aa8bf4eaa939a4068930d38
 }
 .banner {
     width: 20%;
@@ -104,11 +81,7 @@ body::-webkit-scrollbar {
     margin-left: -150px; /* de TCR Logo in de footer*/
 
 }
-<<<<<<< HEAD
-.button {
-=======
 button {
->>>>>>> b69403ef91b292fb1aa8bf4eaa939a4068930d38
     background-color: #dbff4a ;
     border: none;
     color: black;
@@ -170,8 +143,6 @@ button {
     display: flex;
     justify-content: right;
     padding: 0rem 2rem;
-<<<<<<< HEAD
-=======
 
 }
 
@@ -179,5 +150,4 @@ iframe {
     width: 500px;
     height: 290px;
     justify-content: space-evenly;
->>>>>>> b69403ef91b292fb1aa8bf4eaa939a4068930d38
 }
