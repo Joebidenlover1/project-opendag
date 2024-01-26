@@ -26,14 +26,14 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: space-between;
     background-color: #006445;
-    background-size: inherit;
+    background-size: inherit; /*de navbar zelf*/
 }
 
 .navbar ul li{
     list-style: none;
     display: inline-block;
     margin: 0 80px;
-    position: relative; /* de navbar zelf*/
+    position: relative; /* text van de nabar*/
 }
 .navbar ul li a {
     font-family: Barlow, serif;
@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: 0.7s;
+    transition: 0.7s; /* de animatie van de navbar*/
 }
 .navbar ul li:hover::after{
     width: 100%;
@@ -164,14 +164,14 @@ a {
 .countdown {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 50px; /*de countdown*/
 
 }
 .textcountdown {
     font-size: 50px;
     color: white;
     position: absolute; bottom: 480px; right: 700px;
-    overflow: hidden;
+    overflow: hidden; /*de text boven de countdown*/
 
 }
 
@@ -186,7 +186,7 @@ a {
     border: 2px solid transparent;
     background-clip: padding-box;
     box-shadow: 10px 10px 10px rgba(45, 55, 68, 0.3);
-    line-height: 1.5;
+    line-height: 1.5; /* achtergrond chatbot*/
 }
 
 .glass-1 {
@@ -241,7 +241,7 @@ a {
     scale: 75%;
     height: 50px;
     border-radius: 20px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* de stuk aan de onderkant met social media links*/
 
 }
 
@@ -262,8 +262,6 @@ a {
 
 .youtube {
     scale: 130%;
-
-<<<<<<< Updated upstream
 }
 
 .app {
@@ -273,7 +271,7 @@ a {
     margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
-    border: 3px solid black;
+    border: 3px solid black; /* de quiz achtergrond */
 
 }
 
@@ -305,7 +303,7 @@ a {
     margin: 10px 0;
     border: 1px solid #222;
     width: 100%;
-    transition: all 0.3s;
+    transition: all 0.3s; /*de knoppen van de quiz*/
 }
 
 .button:hover:not([disabled]) {
@@ -328,7 +326,7 @@ a {
     margin: 20px auto 0;
     cursor: pointer;
     border-radius: 4px;
-    display: none;
+    display: none; /* de knop om verder te gaan */
 }
 
 
@@ -365,7 +363,7 @@ a {
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: 0.7s;
+    transition: 0.7s; /* de animatie voor de registratie*/
 
 }
 
