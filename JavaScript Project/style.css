@@ -147,40 +147,37 @@ iframe {
 a {
     color: Red;
 }
+.countdown-container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.countdown-item {
+    display: inline-block;
+    padding: 20px;
+    font-size: 60px;
+    color: white;
+    position: absolute; bottom: 350px; right: 540px;
+    overflow: hidden;
+}
 
 .countdown {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+
+}
+.textcountdown {
+    font-size: 50px;
     color: white;
+    position: absolute; bottom: 480px; right: 700px;
+    overflow: hidden;
+
 }
 
-.square {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-}
-
-.square span {
-    font-size: 48px;
-}
-
-.label {
-    margin-top: 10px;
-    text-align: center;
-}
-
-span.label{
-    font-size: 30px;
-}
 .glass {
     width: 1435px;        /* 700 px */
-<<<<<<< Updated upstream
-    height: 660px;
-=======
     height: 520px;
->>>>>>> Stashed changes
     background-color: rgba(255, 255, 255, 0.1);
     padding: 50px;
     color: #000;
@@ -237,7 +234,7 @@ span.label{
 }
 
 .footer {
-    margin-top: 422px;
+    margin-top: 550px;
     margin-left: 580px;
     max-width: 350px;
     background-color: #006445;
