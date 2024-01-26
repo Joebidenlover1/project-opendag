@@ -345,6 +345,33 @@ span.label{
 
 .incorrect {
     background: red;
-=======
->>>>>>> Stashed changes
+}
+
+#register {
+    font-family: Barlow, Serif;
+    color: yellow;
+    border: none;
+    text-decoration: none;
+    background-color: #006445;
+    margin-right: 50px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#register ::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #184b2f;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.7s;
+
+}
+
+#register :hover::after{
+    width: 100%;
 }
