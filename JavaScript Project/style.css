@@ -150,7 +150,7 @@ a {
 
 .glass {
     width: 1435px;        /* 700 px */
-    height: 540px;
+    height: 660px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 50px;
     color: #000;
@@ -266,7 +266,7 @@ a {
     font-weight: 600;
 }
 
-.btn {
+.button {
     background: white;
     color: darkslategray;
     font-weight: 500;
@@ -280,12 +280,16 @@ a {
     transition: all 0.3s;
 }
 
-.btn:hover {
+.button:hover:not([disabled]) {
     background: black;
     color: white;
 }
 
-#next-btn {
+.button:disabled{
+    cursor: no-drop;
+}
+
+#next-button {
     background-color: #006445;
     color: white;
     font-weight: 500;
@@ -302,4 +306,12 @@ a {
 
 #question {
     color: black;
+}
+
+.correct {
+    background: lightgreen;
+}
+
+.incorrect {
+    background: red;
 }
