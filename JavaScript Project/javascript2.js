@@ -151,7 +151,7 @@ function selectAnswer(e) {
 
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`; // Using backticks for template literals
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! https://www.techniekcollegerotterdam.nl/aanmelden`; // Using backticks for template literals
     nextButton.innerHTML = "Play Again!";
     nextButton.style.display = "block";
 }
