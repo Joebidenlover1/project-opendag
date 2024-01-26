@@ -266,7 +266,7 @@ a {
     font-weight: 600;
 }
 
-.button {
+.btn {
     background: white;
     color: darkslategray;
     font-weight: 500;
@@ -280,7 +280,7 @@ a {
     transition: all 0.3s;
 }
 
-.button:hover {
+.btn:hover {
     background: black;
     color: white;
 }
