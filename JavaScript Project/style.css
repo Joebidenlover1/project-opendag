@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 .navbar ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 100px;
+    margin: 0 80px;
     position: relative; /* de navbar zelf*/
 }
 .navbar ul li a {
