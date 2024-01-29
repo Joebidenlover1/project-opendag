@@ -1,4 +1,4 @@
-var questions = [
+const questions = [ //the array of questions used in the quiz
     {
         question: "Wat doe je met de opleiding Software Developer?",
         answers: [
@@ -92,21 +92,21 @@ var questions = [
 ];
     // Your questions array...
 
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-button"); // Corrected ID
+const questionElement = document.getElementById("question"); //used to display the current question.    the variables reference an HTML element.
+const answerButtons = document.getElementById("answer-buttons"); //container for the answer buttons.
+const nextButton = document.getElementById("next-button"); //  button to proceed to the next question or show the final score.
 
-let currentQuestionIndex = 0;
-let score = 0;
+let currentQuestionIndex = 0; //keeps track of the index of the current question.
+let score = 0; //keeps track of the score.
 
-function startQuiz() {
+function startQuiz() { // resets the quiz by resetting the score and current question index and displays the first question.
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next";
     showQuestion();
 }
 
-function showQuestion() {
+function showQuestion() { //displays the current question and its answers.
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
@@ -124,14 +124,14 @@ function showQuestion() {
     });
 }
 
-function resetState() {
+function resetState() { //clears the answer buttons and hides the next button.
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
-function selectAnswer(e) {
+function selectAnswer(e) { //handles the selection of the answers. updates the score and text on the current answer.
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect) {
@@ -149,14 +149,14 @@ function selectAnswer(e) {
     nextButton.style.display = "block";
 }
 
-function showScore() {
+function showScore() { //shows the final score once all 10 questions have been answered.
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! https://www.techniekcollegerotterdam.nl/aanmelden`; // Using backticks for template literals
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`; // Using backticks for template literals
     nextButton.innerHTML = "Play Again!";
     nextButton.style.display = "block";
 }
 
-function handleNextButton() {
+function handleNextButton() { //handles the click event on the next button and proceeds to show next question or the final score.
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
         showQuestion();
@@ -171,6 +171,6 @@ nextButton.addEventListener("click", () => {
     } else {
         startQuiz();
     }
-});
+}); //event listener added to the next button to handle clicks and determine whether to show the next question or the final score
 
-startQuiz();
+startQuiz(); //starts the quiz by executing the "startQuiz" function

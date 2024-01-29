@@ -245,14 +245,14 @@ a {
 
 }
 
-.footer ul a {
+.footer a {
    max-width: 20px;
     max-height: 20px;
     scale: 20%;
     margin-left:15px ;
 }
 
-.footer ul a img {
+.footer a img {
     align-items: center;
     justify-content: center;
     width: 50px;
@@ -343,7 +343,7 @@ a {
 }
 
 #register {
-    font-family: Barlow, Serif;
+    font-family: "Montagu Slab", sans-serif;
     color: yellow;
     border: none;
     text-decoration: none;
@@ -369,4 +369,8 @@ a {
 
 #register :hover::after{
     width: 100%;
+}
+
+.hoofdpagina {
+    margin-left: 400px;
 }
